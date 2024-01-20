@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="input-container">
+        <div class="input-container-inner">
+          <h2 class="time-title">D A Y</h2>
+          <input class="time-input" placeholder="DD" />
+          <p class="error"></p>
+        </div>
+        <div class="input-container-inner">
+          <h2 class="time-title">M O N T H</h2>
+          <input class="time-input" placeholder="MM" />
+          <p i class="error"></p>
+        </div>
+        <div class="input-container-inner">
+          <h2 class="time-title">Y E A R</h2>
+          <input class="time-input" placeholder="YYYY" />
+          <p class="error"></p>
+        </div>
+      </section>
+      <section class="enter-input-container">
+        <div class="horizontal-line">
+          <button class="enter-button">
+            <img src="assets/images/icon-arrow.svg" />
+          </button>
+        </div>
+      </section>
+      <section class="results-container">
+        <p class="years time">
+          <span class="years-value time-value">- -</span> years
+        </p>
+        <p class="months time">
+          <span class="months-value time-value">- -</span> months
+        </p>
+        <p class="days time">
+          <span class="days-value time-value">- -</span> days
+        </p>
+      </section>
+    </main>
+  </body>
+
+  <script type="module" src="https://cdn.skypack.dev/date-fns@2.23.0"></script>
+  <script type="module" src="script.js"></script>
+</html>
